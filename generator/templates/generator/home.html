@@ -1,0 +1,21 @@
+<h1>passward generator</h1>
+
+<form action="{% url 'passward'%}">
+  <select name="length">
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11" selected="selected">11</option>
+    <option value="12">12</option>
+    </select>
+    <br>
+    <input type="checkbox" name="uppercase">uppercase
+    <br>
+    <input type="checkbox" name="numbers">numbers
+    <br>
+    <input type="checkbox" name="spclchar">spclchar
+    <br>
+    <input type="submit" value="generate passward">
+  </form>
